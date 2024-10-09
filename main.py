@@ -22,6 +22,7 @@ def main():
 
     #BFS
     bfs = gn.bfs(filteredGraph)
+    print("BFS:", bfs)
 
     #Visualization
     nx.draw(G, with_labels=True)
