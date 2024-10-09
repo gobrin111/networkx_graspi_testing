@@ -1,34 +1,55 @@
-# networkx_graspi_testing
-https://stackoverflow.com/questions/77507580/userwarning-figurecanvasagg-is-non-interactive-and-thus-cannot-be-shown-plt-sh
-
-
 <h1>Installing graspi_networkx via pip</h1>
 <p>Below are instrictions regarding how to install graspi_networkx.</p>
 
 ## INSTALLATION
 1. ```bash
-   pip install graspi-networkx==0.1.5
+   pip install graspi-networkx==0.1.7
    ```
 2. That's it
 <br>
 <h2>USING THE PACKAGE</h2>
 <p>After installing all dependencies, you're able to follow this formula in the command line</p>
-<h3> importing graspi_networkx via notebook/python script</h3>
+<h3>Importing graspi_networkx via Python script</h3>
+In a python script/IDE terminal:
+
+```bash
+git clone https://github.com/gobrin111/networkx_graspi_testing.git
+```
 
 ```bash
 import graspi_networkx as gn
 ```
-<h3> Command Line Formula</h3>
+### Command Line Formula
+`python .\main.py <input txt file>`
 
-```bash
-python .\main
-```
 Example
 ```bash
-
+python .\main.py .\2x2.txt
 ```
-<h3>OUTPUTS</h3>
 
-* Nodes and edges for the created graph
-* Nodes and edges for the created subgraph
-* Node 0 represents a blue cathode and Node 1 represents a red anode
+### Importing graspi_networkx via Jupyter Notebook
+1. Open Jupyter and create a new Notebook
+2. In a cell put:
+    ```bash
+   !git clone https://github.com/gobrin111/networkx_graspi_testing.git
+   ```
+3. In the next cell, change directory into the cloned repo put:
+   ```bash
+   %cd networkx_graspi_testing
+   ```
+4. In the next cell, install the graspi_networkx package put:
+   ```bash
+   !pip install graspi-networkx==0.1.7
+   ```
+5. In the next cell, run the already made testing file (main.py) put:
+   ```bash
+   !python ./main.py ./2x2.txt
+   ```
+<h3>OUTPUTS</h3>
+<ul>
+   <li>Graph Creation: All the Nodes and Edges for the created Graph</li>
+   <li>Last 2 nodes of Graph represent the blue and red nodes respectfully</li>
+   <li>Subgraph: Nodes and edges for the created subgraph</li>
+   <li>BFS: With the source node being 1, returns a 2d array that resembles the paths from each node to the source node</li>
+   <li>Visualization: Shows a picture of the nodes and respective edges connected to each other</li>
+</ul>
