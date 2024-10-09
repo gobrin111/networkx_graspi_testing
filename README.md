@@ -3,19 +3,24 @@
 
 ## INSTALLATION
 1. ```bash
-   pip install graspi-networkx==0.1.6
+   pip install graspi-networkx==0.1.7
    ```
 2. That's it
 <br>
 <h2>USING THE PACKAGE</h2>
 <p>After installing all dependencies, you're able to follow this formula in the command line</p>
 <h3>Importing graspi_networkx via Python script</h3>
+In a python script/IDE terminal:
+
+```bash
+git clone https://github.com/gobrin111/networkx_graspi_testing.git
+```
 
 ```bash
 import graspi_networkx as gn
 ```
 ### Command Line Formula
-`python .\main <input txt file>`
+`python .\main.py <input txt file>`
 
 Example
 ```bash
@@ -34,7 +39,7 @@ python .\main.py .\2x2.txt
    ```
 4. In the next cell, install the graspi_networkx package put:
    ```bash
-   !pip install graspi-networkx==0.1.6
+   !pip install graspi-networkx==0.1.7
    ```
 5. In the next cell, run the already made testing file (main.py) put:
    ```bash
@@ -43,7 +48,7 @@ python .\main.py .\2x2.txt
 <h3>OUTPUTS</h3>
 <ul>
    <li>Graph Creation: All the Nodes and Edges for the created Graph</li>
-   <li>Last 2 nodes of Graph represent the red and blue nodes respectfully</li>
+   <li>Last 2 nodes of Graph represent the blue and red nodes respectfully</li>
    <li>Subgraph: Nodes and edges for the created subgraph</li>
    <li>BFS: With the source node being 1, returns a 2d array that resembles the paths from each node to the source node</li>
    <li>Visualization: Shows a picture of the nodes and respective edges connected to each other</li>
