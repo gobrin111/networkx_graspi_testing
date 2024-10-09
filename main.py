@@ -9,7 +9,6 @@ args = parser.parse_args()
 args = args.input_value
 
 def main():
-    #Node 0 is Blue and 1 is Red
     #Graph Creation
     G = gn.createGraph(args)
     print("Nodes:", G.nodes())
@@ -21,7 +20,8 @@ def main():
     print("Subgraph Edges:", filteredGraph.edges())
 
     #BFS
-    bfs = gn.bfs(filteredGraph)
+    numNodes = G.number_of_nodes()
+    bfs = gn.bfs(filteredGraph, numNodes-1)
     print("BFS:", bfs)
 
     #Visualization
