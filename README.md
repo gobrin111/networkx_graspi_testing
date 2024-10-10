@@ -10,12 +10,14 @@
 <h2>USING THE PACKAGE</h2>
 <p>After installing all dependencies, you're able to follow this formula in the command line</p>
 <h3>Importing graspi_networkx via Python script</h3>
-In a python script/IDE terminal:
+In a python script/IDE terminal, clone the repo:
 
 ```bash
 git clone https://github.com/gobrin111/networkx_graspi_testing.git
 ```
+<br>
 
+In the cloned repo, graspi_networkx is already imported, but if you'd like, delete it and write:
 ```bash
 import graspi_networkx as gn
 ```
