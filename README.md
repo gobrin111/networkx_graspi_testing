@@ -3,19 +3,21 @@
 
 ## INSTALLATION
 1. ```bash
-   pip install graspi-networkx==0.1.7
+   pip install graspi-networkx==0.2.5
    ```
 2. That's it
 <br>
 <h2>USING THE PACKAGE</h2>
 <p>After installing all dependencies, you're able to follow this formula in the command line</p>
 <h3>Importing graspi_networkx via Python script</h3>
-In a python script/IDE terminal:
+In a python script/IDE terminal, clone the repo:
 
 ```bash
 git clone https://github.com/gobrin111/networkx_graspi_testing.git
 ```
+<br>
 
+In the cloned repo, graspi_networkx is already imported, but if you'd like, delete it and write:
 ```bash
 import graspi_networkx as gn
 ```
@@ -39,7 +41,7 @@ python .\main.py .\2x2.txt
    ```
 4. In the next cell, install the graspi_networkx package put:
    ```bash
-   !pip install graspi-networkx==0.1.7
+   !pip install graspi-networkx==0.2.5
    ```
 5. In the next cell, run the already made testing file (main.py) put:
    ```bash
