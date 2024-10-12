@@ -2,20 +2,19 @@
 <p>Below are instrictions regarding how to install graspi_networkx.</p>
 
 ## INSTALLATION
-1. ```bash
-   pip install graspi-networkx==0.2.8
-   ```
-2. That's it
+1. In a python script/IDE terminal, clone the repo:
+```bash
+   git clone https://github.com/gobrin111/networkx_graspi_testing.git
+```
+
+2. Install graspi-networkx
+```bash
+   pip install graspi-networkx==0.2.9
+```
 <br>
 <h2>USING THE PACKAGE</h2>
 <p>After installing all dependencies, you're able to follow this formula in the command line</p>
 <h3>Importing graspi_networkx via Python script</h3>
-In a python script/IDE terminal, clone the repo:
-
-```bash
-git clone https://github.com/gobrin111/networkx_graspi_testing.git
-```
-<br>
 
 In the cloned repo, graspi_networkx is already imported, but if you'd like, delete it and write:
 ```bash
@@ -30,23 +29,19 @@ python .\main.py .\2x2.txt
 ```
 
 ### Importing graspi_networkx via Jupyter Notebook
-1. Open Jupyter and create a new Notebook
-2. In a cell put:
-    ```bash
-   !git clone https://github.com/gobrin111/networkx_graspi_testing.git
+1. Install notebook:
+```bash
+   pip install notebook
    ```
-3. In the next cell, change directory into the cloned repo put:
-   ```bash
-   %cd networkx_graspi_testing
+2. Open Jupyter Notebook:
+```bash
+   jupyter notebook
    ```
-4. In the next cell, install the graspi_networkx package put:
-   ```bash
-   !pip install graspi-networkx==0.2.8
-   ```
-5. In the next cell, run the already made testing file (main.py) put:
-   ```bash
-   !python ./main.py ./2x2.txt
-   ```
+3. Once opened, open the **Graspi-Networkx.ipynb** file
+4. Click on the **Run** tab on top and click on **Run All Cells**
+
+**If you wish to use a different test file, you may change cell 4 and replace "10x10.txt" with any file from the testFiles directory**
+
 <h3>OUTPUTS</h3>
 <ul>
    <li>Graph Creation: All the Nodes and Edges for the created Graph</li>
