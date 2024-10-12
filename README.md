@@ -49,4 +49,5 @@ python .\main.py .\2x2.txt
    <li>Subgraph: Nodes and edges for the created subgraph</li>
    <li>BFS: With the source node being 1, returns a 2d array that resembles the paths from each node to the source node</li>
    <li>Visualization: Shows a picture of the nodes and respective edges connected to each other</li>
+   <li>Runtimes and Memory: Outputs a csv file which contains the runtimes for graph creation, subgraphs, and BFS as well as the total runtime</li>
 </ul>
