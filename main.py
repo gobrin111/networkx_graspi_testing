@@ -18,10 +18,10 @@ def writeRow(txt):
     row = []
     finalTotal = 0
     total = 0
-    g = createGraph(txt)
+    g = gn.createGraph(txt)
     for i in range(3):
         start = time.time()
-        g=createGraph(txt)
+        g = gn.createGraph(txt)
         total+=time.time()-start
     total = total/3
     finalTotal +=total
@@ -30,7 +30,7 @@ def writeRow(txt):
 
     for i in range(3):
         start = time.time()
-        g_filtered = filterGraph(g)
+        g_filtered = gn.filterGraph(g)
         total+=time.time()-start
     total = total / 3
     finalTotal+=total
@@ -47,8 +47,8 @@ def writeRow(txt):
     row.append(total)
     row.append(finalTotal)
     tracemalloc.start()
-    g=createGraph(txt)
-    g_filtered = filterGraph(g)
+    g=gn.createGraph(txt)
+    g_filtered = gn.filterGraph(g)
     bfs_paths=nx.single_source_shortest_path(g_filtered, source=num_nodes-1)
     stats = tracemalloc.get_traced_memory()
     tracemalloc.stop()
