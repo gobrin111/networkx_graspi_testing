@@ -3,7 +3,7 @@
 
 ## INSTALLATION
 1. ```bash
-   pip install graspi-networkx==0.2.6
+   pip install graspi-networkx==0.2.7
    ```
 2. That's it
 <br>
@@ -41,7 +41,7 @@ python .\main.py .\2x2.txt
    ```
 4. In the next cell, install the graspi_networkx package put:
    ```bash
-   !pip install graspi-networkx==0.2.6
+   !pip install graspi-networkx==0.2.7
    ```
 5. In the next cell, run the already made testing file (main.py) put:
    ```bash
