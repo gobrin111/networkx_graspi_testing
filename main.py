@@ -10,7 +10,7 @@ args = args.input_value
 
 def main():
     #Graph Creation
-    G = gn.createGraph(args)
+    G = gn.createGraph("./testFiles/10x10.txt")
     print("Nodes:", G.nodes())
     print("Edges:", G.edges())
 
