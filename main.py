@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 import csv
 import tracemalloc
 import time
+import os
 
 parser = argparse.ArgumentParser(description="Run Python code with user input")
 parser.add_argument("input_value", help="Input value to process")
@@ -86,9 +87,12 @@ def main():
     # runtime is measured in seconds
     # and memory is measured in bytes
     # results are sent to the out.csv file in the same directory
+    file_exists = os.path.exists('out.csv')
     row = writeRow(args)
-    with open('out.csv', mode='a', newline='') as file:
+    with open('out.csv', mode='a' if file_exists else 'w', newline='') as file:
         writer = csv.writer(file)
+        if not file_exists:
+            writer.writerow(['creation(s)','filtering(s)','bfs(s)','overall runtime(s)','whole memory usage(byte)'])
         writer.writerow(row)
 
 if __name__ == "__main__":
