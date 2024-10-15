@@ -70,7 +70,7 @@ def main():
 
     #BFS
     numNodes = G.number_of_nodes()
-    bfs = gn.bfs(filteredGraph, numNodes-1)
+    bfs = gn.bfs(filteredGraph, numNodes-2)
     print("BFS:", bfs)
 
     #Visualization
