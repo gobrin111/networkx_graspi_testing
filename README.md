@@ -21,11 +21,11 @@ In the cloned repo, graspi_networkx is already imported, but if you'd like, dele
 import graspi_networkx as gn
 ```
 ### Command Line Formula
-`python .\main.py .\testFiles\<input txt file>`
+`python ./main.py ./testFiles/<input txt file>`
 
 Example
 ```bash
-python .\main.py .\testFiles\2x2x2.txt 
+python ./main.py ./testFiles/2x2x2.txt
 ```
 
 ### Importing graspi_networkx via Jupyter Notebook
