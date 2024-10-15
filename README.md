@@ -11,6 +11,11 @@
 ```bash
    pip install graspi-networkx==0.3.3
 ```
+
+3. Change directories to go into the repo
+```bash
+   cd networkx_graspi_testing
+```
 <br>
 <h2>USING THE PACKAGE</h2>
 <p>After installing all dependencies, you're able to follow this formula in the command line</p>
