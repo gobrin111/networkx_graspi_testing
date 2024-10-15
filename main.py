@@ -74,8 +74,7 @@ def main():
     print("BFS:", bfs)
 
     #Visualization
-    nx.draw(G, with_labels=True)
-    plt.show()
+    gn.plotGraph(G)
 
     #writes to the csv file all the calculated times and memory usage
     # first column is the average runtime for graph creation
