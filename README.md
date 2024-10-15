@@ -9,7 +9,7 @@
 
 2. Install graspi-networkx
 ```bash
-   pip install graspi-networkx==0.2.9
+   pip install graspi-networkx==0.3.1
 ```
 <br>
 <h2>USING THE PACKAGE</h2>
